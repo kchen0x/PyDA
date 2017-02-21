@@ -1,4 +1,4 @@
-# pylint: disable=I0011,C0103,C0413,W0104
+# pylint: disable=I0011,C0103,C0413,W0104,W0106
 
 #%%
 path = 'data_set/usagov_bitly_data2013-05-17-1368832207'
