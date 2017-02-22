@@ -80,7 +80,8 @@ table.plot(title='Sum of table1000.prop by year and sex',
            yticks=np.linspace(0, 1.2, 13), xticks=range(1880, 2020, 20))
 # people are no long willing to give the common names to their children
 
-#%% calculate the cumsum of prop first, then find the accumulation of 0.5, so we can know how many names consist of the 50% over all the names
+#%% calculate the cumsum of prop first, then find the accumulation of 0.5,
+# so we can know how many names consist of the 50% over all the names
 df = boys[boys.year == 2014]
 prop_cumsum = df.sort_values(by='prop', ascending=False).prop.cumsum()
 prop_cumsum.searchsorted(0.5)[0] + 1
