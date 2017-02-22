@@ -38,7 +38,7 @@ mean_ratings[:5]
 
 #%%
 ratings_by_title = data.groupby('title').size()
-ratings_by_title[:10]
+ratings_by_title[:5]
 
 #%% get the title of movies who get 250 ratings or above
 active_titles = ratings_by_title.index[ratings_by_title >= 250]

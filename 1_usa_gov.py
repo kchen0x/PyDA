@@ -54,7 +54,7 @@ from pandas import DataFrame, Series
 import pandas as pd
 import numpy as np
 frame = DataFrame(records)
-frame
+frame[:5]
 
 #%%
 frame['tz'][:10]
